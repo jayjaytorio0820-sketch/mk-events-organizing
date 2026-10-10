@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check your date | MK Events</title>
+<meta name="description" content="Send MK Events your date, guest count, motif, and budget in one short form.">
+<meta property="og:title" content="Check your date | MK Events">
+<meta property="og:description" content="Send MK Events your date, guest count, motif, and budget in one short form.">
+<meta property="og:image" content="assets/images/portfolio/royal-tunnel/tunnel-1.jpg">
+<meta name="theme-color" content="#17402F">
+<link rel="preload" href="assets/fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 40'%3E%3Cpath d='M0 40V16a16 16 0 0 1 32 0v24z' fill='%2317402F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var m=localStorage.getItem('mk-motif');if(m&&m!=='emerald')document.documentElement.setAttribute('data-motif',m)}catch(e){}</script>
+</head>
+<body>
+<div class="preview-bar" role="note">This is a website preview by Stallion. Some photos and text are samples taken from your Facebook page.<button type="button">Hide</button></div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="MK Events Organizing Services, home">
+      <span class="brand-mark" aria-hidden="true">MK</span>
+      <span class="brand-name">MK Events<small>Organizing Services</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main menu">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="rsvp-demo.html">Wedding website</a>
+      <a class="btn" href="inquire.html">Check your date</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<header class="page-head"><div class="wrap">
+  <h1>Check your date</h1>
+  <p class="lede">One short form. Send it on Messenger or by text with every detail we need to reply quickly.</p>
+</div></header>
+<section style="padding-top:8px"><div class="wrap form-grid">
+  <form id="inquiry" novalidate data-phone="09159315674" data-messenger="https://m.me/">
+    <div class="row">
+      <div class="field" data-required="name"><label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name">
+        <p class="error" data-error="name" hidden>Enter your name.</p></div>
+      <div class="field" data-required="contact"><label for="contact">Mobile number or Facebook name</label>
+        <input id="contact" name="contact" autocomplete="tel">
+        <p class="error" data-error="contact" hidden>Tell us how to reach you.</p></div>
+    </div>
+    <fieldset class="field" data-required="event"><legend>Event</legend>
+      <div class="pick"><label><input type="radio" name="event" value="wedding" data-label="Wedding"><span>Wedding</span></label>
+<label><input type="radio" name="event" value="debut" data-label="Debut"><span>Debut</span></label>
+<label><input type="radio" name="event" value="birthday" data-label="Birthday"><span>Birthday</span></label>
+<label><input type="radio" name="event" value="other" data-label="Something else"><span>Something else</span></label></div>
+      <p class="error" data-error="event" hidden>Choose your type of event.</p></fieldset>
+    <div class="row">
+      <div class="field" data-required="date"><label for="date">Date</label>
+        <input id="date" name="date" type="date">
+        <p class="error" data-error="date" hidden>Enter a date, even a tentative one.</p></div>
+      <div class="field" data-required="guests"><label for="guests">Number of guests</label>
+        <select id="guests" name="guests">
+          <option value="">Choose</option><option>Up to 50</option><option>51 to 100</option>
+          <option>101 to 150</option><option>151 to 200</option><option>More than 200</option>
+        </select>
+        <p class="error" data-error="guests" hidden>Choose an estimated guest count.</p></div>
+    </div>
+    <div class="field"><label for="venue">Venue or location</label>
+      <p class="hint">For example, your chapel and reception venue, or just the city for now.</p>
+      <input id="venue" name="venue"></div>
+    <fieldset class="field"><legend>Motif</legend>
+      <div class="pick"><label><input type="radio" name="motif" value="blue-gold-elegant" data-label="Blue Gold Elegant"><span>Blue Gold Elegant</span></label>
+<label><input type="radio" name="motif" value="green-motif" data-label="Emerald"><span>Emerald</span></label>
+<label><input type="radio" name="motif" value="purple" data-label="Purple"><span>Purple</span></label>
+<label><input type="radio" name="motif" value="undecided" data-label="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
+    <div class="row">
+      <div class="field"><label for="package">Package</label>
+        <select id="package" name="package">
+          <option value="">Not sure yet</option>
+          <option value="luxury">Luxury Wedding Plan</option>
+          <option value="styling">Chapel &amp; Reception Styling</option>
+          <option value="celebration">Debut &amp; Birthday</option>
+        </select></div>
+      <div class="field"><label for="budget">Budget</label>
+        <select id="budget" name="budget">
+          <!-- PLACEHOLDER: adjust ranges to MK's packages -->
+          <option value="">I'd rather discuss it</option>
+          <option>Below ₱100,000</option><option>₱100,000 to ₱200,000</option>
+          <option>₱200,000 to ₱350,000</option><option>Above ₱350,000</option>
+        </select></div>
+    </div>
+    <div class="field"><label for="notes">Anything else</label>
+      <textarea id="notes" name="notes" placeholder="For example, we'd love the Royal Tunnel and Selfie Mirror Booth"></textarea></div>
+  </form>
+  <aside class="summary-card" aria-labelledby="sum-h">
+    <h3 id="sum-h">Your inquiry</h3>
+    <pre id="summary" aria-live="polite"></pre>
+    <button type="button" class="btn" data-send="messenger">Send on Messenger</button>
+    <button type="button" class="btn ghost" data-send="sms">Text 0915-931-5674</button>
+    <button type="button" class="btn ghost" data-send="copy" style="border-color:var(--line)">Copy inquiry</button>
+    <p class="status" role="status"></p>
+    <p class="note">On Messenger, your inquiry is copied first. Just paste it into the chat.</p>
+  </aside>
+</div></section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <h3>MK Events Organizing Services</h3>
+      <p>Wedding, debut, and birthday styling and coordination. From the chapel to the reception, one team.</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="inquire.html">Check your date</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <!-- PLACEHOLDER: contact details, confirm with MK -->
+        <li><a href="tel:09159315674">0915-931-5674</a></li>
+        <li><a href="https://m.me/" target="_blank" rel="noopener">Message us on Messenger</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook page</a></li>
+      </ul>
+    </div>
+    <p class="fine">© 2026 MK Events Organizing Services. Website preview by Stallion.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

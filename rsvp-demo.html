@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paolo &amp; Bea | Wedding website demo by MK Events</title>
+<meta name="description" content="A demo of the wedding website and online RSVP included with MK packages.">
+<meta property="og:title" content="Paolo &amp; Bea | Wedding website demo by MK Events">
+<meta property="og:description" content="A demo of the wedding website and online RSVP included with MK packages.">
+<meta property="og:image" content="assets/images/portfolio/royal-tunnel/tunnel-1.jpg">
+<meta name="theme-color" content="#17402F">
+<link rel="preload" href="assets/fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 40'%3E%3Cpath d='M0 40V16a16 16 0 0 1 32 0v24z' fill='%2317402F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var m=localStorage.getItem('mk-motif');if(m&&m!=='emerald')document.documentElement.setAttribute('data-motif',m)}catch(e){}</script>
+</head>
+<body>
+<div class="preview-bar" role="note">This is a website preview by Stallion. Some photos and text are samples taken from your Facebook page.<button type="button">Hide</button></div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="MK Events Organizing Services, home">
+      <span class="brand-mark" aria-hidden="true">MK</span>
+      <span class="brand-name">MK Events<small>Organizing Services</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main menu">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="rsvp-demo.html" aria-current="page">Wedding website</a>
+      <a class="btn" href="inquire.html">Check your date</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="demo-note">This is a demo of the wedding website MK can include in every package. The couple and details are samples.</div>
+<section class="wed-hero" style="padding-bottom:0">
+  <div class="wrap">
+    <p style="margin:0 auto;color:var(--muted)">Together with their families</p>
+    <h1 class="names">Paolo &amp; Bea</h1>
+    <p class="date" style="margin:0 auto">Saturday, February 20, 2027</p>
+    <div class="arch outline wed-photo"><img src="assets/images/portfolio/prenup/staircase.jpg" alt="Prenup photo of the couple on a white staircase"></div>
+    <div class="countdown" aria-label="Countdown to the wedding">
+      <div><strong data-d>0</strong><span>days</span></div>
+      <div><strong data-h>0</strong><span>hours</span></div>
+      <div><strong data-m>0</strong><span>minutes</span></div>
+    </div>
+  </div>
+</section>
+<section><div class="wrap">
+  <div class="details">
+    <div><h3>Ceremony</h3><p>3:00 PM<br>Iglesia Ni Cristo, Lokal ng Sampaloc</p></div>
+    <div><h3>Reception</h3><p>6:00 PM<br>Mojica's Jardin Events</p></div>
+    <div><h3>Motif</h3><p>Emerald green and champagne gold. Formal attire.</p></div>
+  </div>
+</div></section>
+<section class="paper"><div class="wrap">
+  <div class="rsvp-box">
+    <span class="ornament" aria-hidden="true"></span>
+    <h2 style="text-align:center">RSVP</h2>
+    <p class="lede" style="text-align:center;margin:0 auto 28px">Kindly reply by January 20, 2027.</p>
+    <form id="rsvp" novalidate>
+      <div class="field"><label for="guest">Your name</label><input id="guest" name="guest" autocomplete="name"></div>
+      <fieldset class="field"><legend>Will you attend?</legend>
+        <div class="pick">
+          <label><input type="radio" name="attend" value="yes"><span>Joyfully accepts</span></label>
+          <label><input type="radio" name="attend" value="no"><span>Regretfully declines</span></label>
+        </div></fieldset>
+      <div class="field" id="seats-field" hidden><label for="seats">How many seats do you need?</label>
+        <select id="seats" name="seats"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <p class="error" hidden>Enter your name and choose whether you'll attend.</p>
+      <button class="btn" type="submit">Send RSVP</button>
+    </form>
+    <div class="rsvp-done" hidden tabindex="-1">
+      <h3></h3><p data-detail style="margin:0 auto 16px"></p>
+      <button type="button" class="btn ghost" data-rsvp-again>Reply for another guest</button>
+    </div>
+    <div style="margin-top:40px;text-align:center">
+      <p style="margin:0 auto;font-weight:600">What the couple sees</p>
+      <div class="tally" aria-live="polite"><span data-t-yes></span><span data-t-no></span><span data-t-seats></span></div>
+    </div>
+  </div>
+</div></section>
+<section><div class="wrap cta-split">
+  <div><h2>Want one for your wedding?</h2><p class="lede">It comes with the Luxury Wedding Plan, or you can add it to any package.</p></div>
+  <a class="btn" href="inquire.html?package=luxury">Inquire</a>
+</div></section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <h3>MK Events Organizing Services</h3>
+      <p>Wedding, debut, and birthday styling and coordination. From the chapel to the reception, one team.</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="inquire.html">Check your date</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <!-- PLACEHOLDER: contact details, confirm with MK -->
+        <li><a href="tel:09159315674">0915-931-5674</a></li>
+        <li><a href="https://m.me/" target="_blank" rel="noopener">Message us on Messenger</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook page</a></li>
+      </ul>
+    </div>
+    <p class="fine">© 2026 MK Events Organizing Services. Website preview by Stallion.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/rsvp-demo.js" defer></script>
+</body>
+</html>
