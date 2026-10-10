@@ -358,3 +358,61 @@ h2 { font-size: clamp(34px, 4.8vw, 60px); }
 
 /* Reviews: serif body for warmth */
 .review p { font-family: var(--serif); font-size: 18px; line-height: 1.5; }
+
+/* ===================== Refinement: readable type + richer palette ===================== */
+:root {
+  --ivory: #FBF8F2;
+  --paper: #F3EDE2;
+  --ink: #16201C;
+  --muted: #47524D;
+  --line: #E1D8C7;
+  --gold: #D4B47A;        /* champagne, luminous on dark */
+  --gold-deep: #8C6A2F;   /* readable gold on light */
+  --motif: #0E3326;       /* deep velvet emerald */
+  --motif-lift: #1A4A38;
+  --on-motif: #F7F1E3;
+}
+:root[data-motif="blue"]   { --motif: #131F40; --motif-lift: #22305C; --gold: #D6B77E; }
+:root[data-motif="purple"] { --motif: #36203D; --motif-lift: #4B2F54; --gold: #D9B98A; }
+
+/* Didone, but the sturdier text cut: thicker hairlines, tighter fit */
+h1, h2, h3, .proof strong, .quote blockquote, .review p, .countdown strong, .steps li::before {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 18;
+}
+h1, h2 { font-weight: 500; letter-spacing: -0.025em; }
+h3 { font-weight: 600; letter-spacing: -0.01em; }
+h1 { line-height: 1.02; }
+.quote blockquote { font-weight: 500; }
+.review p { font-weight: 500; }
+
+/* Body: larger and higher contrast */
+body { font-size: 18px; line-height: 1.7; color: var(--ink); }
+.lede { font-size: clamp(18px, 1.7vw, 21px); color: var(--muted); }
+.setup p, .steps p, .addon p, .proof span, .pkg li, .filters-label, .shot figcaption, .review footer { font-size: 16px; }
+.band .lede, .band p, .band .setup p { color: color-mix(in srgb, var(--on-motif) 88%, transparent); }
+.hero.band .lede { color: color-mix(in srgb, var(--on-motif) 88%, transparent); }
+
+/* Velvet depth on motif surfaces: a soft light falling from the top right */
+.band, .site-head.on-band, .pkg.feature, .review.big {
+  background-color: var(--motif);
+  background-image: radial-gradient(120% 90% at 78% 0%, var(--motif-lift) 0%, transparent 62%);
+}
+.site-head.on-band { background-image: none; }
+
+/* Gold as foil: thin, luminous, used sparingly */
+.hero.band .hero-ctas .btn:not(.ghost), .btn.gold, .site-head.on-band .nav .btn, .pkg .tag {
+  background: linear-gradient(180deg, #E6CC97 0%, var(--gold) 55%, #B8925A 100%);
+  border-color: #B8925A;
+  color: #1F1A10 !important;
+}
+.steps li::before { color: var(--gold-deep); }
+.ornament { border-color: var(--gold); }
+.proof { border-color: var(--line); }
+.proof strong { color: var(--motif); font-weight: 500; transition: color var(--t); }
+.btn { font-size: 16px; padding: 15px 24px; }
+.site-foot { background: #101714; }
+@media (max-width: 880px) {
+  .hero.band .hero-art { order: 0; max-width: 320px; margin-top: 16px; }
+  .hero.band h1 { font-size: clamp(42px, 11vw, 60px); }
+}
